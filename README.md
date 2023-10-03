@@ -4,3 +4,4 @@ This is the repository for learning the Bash-Scripting. and major goal is to aut
 This is to check the commit
 To open the folder in the vscode by using the command is.
 $ code foldername
+#here today we discuss what are itesm that we going to explain today starting with shebang notation.
