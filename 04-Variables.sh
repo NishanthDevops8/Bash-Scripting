@@ -16,3 +16,4 @@ c=hell0
 echo "Print $a"
 echo "Print $b"
 echo "Print $c"
+echo " Day 19 session is completed "
