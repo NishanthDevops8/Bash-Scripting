@@ -9,7 +9,10 @@
 # and this arguments can be given by while running the script
 a=100
 b=1000
-c=we have used 3 varibles in this script
+c= " we have used 3 variables"
+echo " value of a is $a"
+echo " value of b is $b"
+echo " value of c is $c"
 echo "this is the name of the script $0"
 echo "Father of the nation $1 and his birthday is on october 2nd"
 echo "$*"
