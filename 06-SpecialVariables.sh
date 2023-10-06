@@ -10,4 +10,5 @@
 
 echo "this is the name of the script $0"
 echo "Father of the nation $1 and his birthday is on october 2nd"
+echo "$* these are the varibales used in this script"
 
