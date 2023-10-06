@@ -18,4 +18,5 @@ echo "Father of the nation $1 and his birthday is on october 2nd"
 echo $*
 echo $#
 echo $$
+echo $?
 
