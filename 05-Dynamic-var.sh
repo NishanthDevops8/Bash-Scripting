@@ -3,3 +3,5 @@
 
 val="$(date +%F)"
 echo "todays date is $val"
+
+echo " number of loggin sessiona $(who | wc -l)"
