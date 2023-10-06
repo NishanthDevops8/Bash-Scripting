@@ -7,3 +7,4 @@ f1(){
     read -p " His name is : " Name
     read -p " age is :" Age
 }
+f1
