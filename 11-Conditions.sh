@@ -2,15 +2,15 @@
 #Here we will discuss about the how conditions works
 
 #use case one if valid conditon is hardcoded.
- $temp=a
+ temp=ant
 case $temp in 
-    a)
+    ant)
     echo "Here we are checking the option a"
     ;;
-    b)
+    boy)
     echo "Here we are checking the option b"
     ;;
-    c)
+    cat)
     echo " Here we are checking the option c"
     ;;
 esac
