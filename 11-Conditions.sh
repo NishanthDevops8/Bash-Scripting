@@ -13,4 +13,4 @@ case $temp in
     c)
     echo " Here we are checking the option c"
     ;;
-    
+esac
