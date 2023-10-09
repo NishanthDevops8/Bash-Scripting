@@ -3,7 +3,7 @@
 
 #use case one if valid conditon is hardcoded.
 
-case $temp in
+case $temp in a
     a)
     echo "Here we are checking the option a"
     ;;
