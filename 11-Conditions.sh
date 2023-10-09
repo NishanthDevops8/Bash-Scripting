@@ -13,4 +13,6 @@ case $temp in
     cat)
     echo " Here we are checking the option c"
     ;;
+    *)
+    echo "invalid option"
 esac
