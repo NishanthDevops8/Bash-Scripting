@@ -2,7 +2,7 @@
 #Here we will discuss about the how conditions works
 
 #use case one if valid conditon is hardcoded.
- temp=ant
+ temp=$1
 case $temp in 
     ant)
     echo "Here we are checking the option a"
