@@ -1,6 +1,6 @@
 #!/bin/bash
-logifle = "/tmp/frontend.log"
-component ="frontend"
+logfile = $(&>> /tmp/frontend.log)
+
 status(){
 
     if [ $1 -eq 0 ]; then
