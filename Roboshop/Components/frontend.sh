@@ -16,10 +16,10 @@ fi
 echo -e "\e[32mconfiguring frontend\e[0m"
 echo -n "Installing the frontend"
 yum install nginx -y &>> /tmp/frontend.log
-
+status $?
 
 echo -n "starting nginx"
-
+status $?
 systemctl enable nginx &>> /tmp/frontend.log
 systemctl start nginx  &>> /tmp/frontend.log
 status $?
