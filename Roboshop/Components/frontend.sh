@@ -7,7 +7,8 @@ exit 1
 fi
 echo -e "\e[32mconfiguring frontend\e[0m"
 echo -n "Installing the frontend"
-yum install nginx -y &>> /tmp/frontend.log
+yum install abc
+ -y &>> /tmp/frontend.log
 
 if [ $? -eq 0 ] ; then
     echo -e "\e[32msuccess\e[0m"
