@@ -6,4 +6,4 @@ echo -e "\e[32m Script is expected to execute by the root user\e[0m"
 exit 1
 fi
 echo " configuring frontend"
-yum install nginx -y
+yum install nginx -y &>> /tmp/frontend.log
