@@ -5,7 +5,7 @@ if [ $User_id -ne 0 ] ; then
 echo -e "\e[31m Script is expected to execute by the root user\e[0m" 
 exit 1
 fi
-echo "\e[31m configuring frontend\e[0m]"
+echo "\e[31mconfiguring frontend\e[0m]"
 echo -n "Installing the frontend"
 yum install nginx -y &>> /tmp/frontend.log
 
