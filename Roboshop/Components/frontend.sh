@@ -1,3 +1,4 @@
 #!/bin/bash
-echo " this is the frontend"
-User_id=$(id -u)
+echo " configuring frontend"
+yum install nginx -y
+#User_id=$(id -u)
