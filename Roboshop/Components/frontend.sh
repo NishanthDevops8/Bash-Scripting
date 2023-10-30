@@ -1,5 +1,5 @@
 #!/bin/bash
-logfile = "/tmp/frontend.log"
+logfile="/tmp/frontend.log"
 
 status(){
 
