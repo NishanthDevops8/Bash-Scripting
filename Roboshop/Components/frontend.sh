@@ -1,6 +1,6 @@
 #!/bin/bash
 logfile="/tmp/frontend.log"
-
+component="frontend"
 status(){
 
     if [ $1 -eq 0 ]; then
@@ -14,8 +14,8 @@ if [ $User_id -ne 0 ] ; then
 echo -e "\e[31m Script is expected to execute by the root user\e[0m" 
 exit 1
 fi
-echo -e "\e[32mconfiguring frontend\e[0m"
-echo -n "Installing the frontend"
+echo -e "\e[32mconfiguring ${component}\e[0m"
+echo -n "Installing the ${component}"
 yum install nginx -y &>> ${logfile}
 status $?
 
@@ -24,22 +24,22 @@ systemctl enable nginx &>> ${logfile}
 systemctl start nginx  &>> ${logfile}
 status $?
 echo -n "downloading the zip"
-curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/frontend/archive/main.zip"
+curl -s -L -o /tmp/frontend.zip "https://github.com/stans-robot-project/${component}/archive/main.zip"
 status $?
-echo -n " cleanup the frontend"
+echo -n " cleanup the ${component}"
 cd /usr/share/nginx/html
 rm -rf * &>> ${logfile}
 status $?
-echo -n "extracting frontend"
-unzip /tmp/frontend.zip &>> ${logfile}
+echo -n "extracting ${component}"
+unzip /tmp/${component}.zip &>> ${logfile}
 status $?
-echo -n" sorting the frontend files"
+echo -n" sorting the ${component} files"
 mv frontend-main/* .
 mv static/* . 
-rm -rf frontend-main README.md
+rm -rf ${component}-main README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
 status $?
-echo -n "starting frontend"
+echo -n "starting ${component}"
 systemctl daemon-reload &>> ${logfile}
 systemctl restart nginx  &>> ${logfile}
 status $?
